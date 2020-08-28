@@ -1,0 +1,94 @@
+html {
+  background-color: #6495ED;
+  margin-top: 5rem;
+}
+
+html .logo {
+  background-image: url("https://vignette.wikia.nocookie.net/youtubepoop/images/5/51/Viacom_v_of_doom_template_version_by_oldcartoonnavy47-d65idu9.png/revision/latest/scale-to-width-down/340?cb=20140912073831");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  height: 50vh;
+  -webkit-animation: popin-logo 6s;
+          animation: popin-logo 6s;
+  background-size: 25rem;
+}
+
+html p {
+  position: relative;
+  text-align: center;
+  -webkit-animation: popin 2s;
+          animation: popin 2s;
+  margin-top: -10rem;
+  -webkit-animation: words 2s;
+          animation: words 2s;
+  color: #F8F8FF;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+html p span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html iframe {
+  visibility: hidden;
+}
+
+@-webkit-keyframes words {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes words {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes popin-logo {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes popin-logo {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

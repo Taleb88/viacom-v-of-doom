@@ -1,0 +1,55 @@
+$light-blue: #6495ED;
+$white: #F8F8FF;
+
+html {
+    background-color: $light-blue;
+    margin-top: 5rem;
+
+    .logo {
+        background-image: url('https://vignette.wikia.nocookie.net/youtubepoop/images/5/51/Viacom_v_of_doom_template_version_by_oldcartoonnavy47-d65idu9.png/revision/latest/scale-to-width-down/340?cb=20140912073831');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        height: 50vh;
+        animation: popin-logo 6s;
+        background-size: 25rem;
+    }
+    
+    p {
+        position: relative;
+        text-align: center;
+        animation: popin 2s;
+        margin-top: -10rem;
+        animation: words 2s;
+        color: $white;
+        font-weight: bold;
+        font-size: 3rem;
+
+        span {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@keyframes words {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}
+
+@keyframes popin-logo {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
